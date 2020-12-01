@@ -18,6 +18,6 @@ public interface StudentMapper {
     void insert(Student student);
 
     @Delete("DELETE FROM students WHERE id = #{id}")
-    void deleteStudent(Integer id);
+    void delete(Long id);
 
 }
