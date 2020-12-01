@@ -3,9 +3,9 @@ package kz.greetgo.eschool;
 public class Student {
 
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String groupName;
+    private String name;
+    private String surname;
+    private String course;
 
     public Long getId() {
         return id;
@@ -15,37 +15,37 @@ public class Student {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getGroupName() {
-        return groupName;
+    public String getCourse() {
+        return course;
     }
 
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     @Override
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", groupName='" + groupName + '\'' +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", course='" + course + '\'' +
                 '}';
     }
 
