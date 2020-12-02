@@ -10,4 +10,12 @@ public class Student {
     private String surname;
     private String course;
 
+    public Student() {
+    }
+
+    public Student(String name, String surname, String course) {
+        this.name = name;
+        this.surname = surname;
+        this.course = course;
+    }
 }
