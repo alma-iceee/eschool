@@ -17,7 +17,9 @@ Vue.component('students-list', {
             '<input type="text" placeholder="Enter Surname" v-model="surname" name="surname" id="surname" required>\n' +
             '<label for="course"><b>Group</b></label>\n' +
             '<input type="text" placeholder="Enter Group" v-model="course" name="course" id="course" required>\n' +
-            '<button @click="add_user">Add User</button>\n' +
+            '<button class="btn-add" @click="add_user">Add User</button>\n' +
+            '</br>' +
+            '</br>' +
             '<table>\n' +
                 '<tr>\n' +
                     '<th>ID</th>\n' +
@@ -62,7 +64,7 @@ Vue.component('student-row', {
         '<td>{{ student.name }}</td>\n' +
         '<td>{{ student.surname }}</td>\n' +
         '<td>{{ student.course }}</td>\n' +
-        '<td><button @click="remove">delete</button></td>\n' +
+        '<td><button class="btn-delete" @click="remove">Delete</button></td>\n' +
         '</tr>\n',
     methods: {
         remove() {
@@ -92,7 +94,7 @@ var app = new Vue({
         '       <input type="text" placeholder="Enter Username" v-model="username" name="username" required>\n' +
         '       <label for="password"><b>Password</b></label>\n' +
         '       <input type="password" placeholder="Enter Password" v-model="password" name="password" required>\n' +
-        '       <button @click="login">Login</button>\n' +
+        '       <button class="btn-login" @click="login">Login</button>\n' +
         '       </div>\n' +
         '   </div>\n' +
         '   <div v-else>\n' +
