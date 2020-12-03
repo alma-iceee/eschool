@@ -10,6 +10,15 @@ cd eschool
 ```
 Проект использует PostrgreSQL (настройки дефолтные, но если нужно настроить зайдите в src/main/resources/application.properties и введите ваши конфигурации)
 
+Нужно указать путь репозитория где вы хотите создать jar проекта в pom.xml:
+```
+<distributionManagement>
+    <repository>
+        <id>eschool</id>
+        <url>file://path/to/repo</url>
+    </repository>
+</distributionManagement>
+```
 Чтобы развернуть проект вводим команду:
 ```
 mvnw deploy

@@ -95,8 +95,8 @@
 
     <distributionManagement>
         <repository>
-            <id>test</id>
-            <url>file://C:/Users/almas/IdeaProjects</url>
+            <id>eschool</id>
+            <url>file://path/to/repo</url>
         </repository>
     </distributionManagement>
 
