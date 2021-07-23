@@ -31,7 +31,7 @@ mvnw flyway:migrate
 ```
 mvnw spring-boot:run
 ```
-После запуска сервера, заходим в браузере по адресу: http://locahost:8080
+После запуска сервера, заходим в браузере по адресу: http://localhost:8080
 
 Видим форму логина, вводим admin и pass.
 
